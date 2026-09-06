@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Train, Plane, Car, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Train, Plane, Car, ArrowRight, CheckCircle2, Moon, FileText, Banknote } from "lucide-react";
 import { SERVICES, ServiceItem } from "@/data/content";
 
 interface ServicesSectionProps {
@@ -18,6 +18,12 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
         return <Plane className="w-6 h-6 text-brand-yellow" />;
       case "Car":
         return <Car className="w-6 h-6 text-brand-yellow" />;
+      case "Moon":
+        return <Moon className="w-6 h-6 text-brand-yellow" />;
+      case "FileText":
+        return <FileText className="w-6 h-6 text-brand-yellow" />;
+      case "Banknote":
+        return <Banknote className="w-6 h-6 text-brand-yellow" />;
     }
   };
 

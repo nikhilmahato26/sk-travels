@@ -4,7 +4,7 @@ export interface ServiceItem {
   shortDesc: string;
   longDesc: string;
   image: string;
-  iconName: "Train" | "Plane" | "Car";
+  iconName: "Train" | "Plane" | "Car" | "Moon" | "FileText" | "Banknote";
   badge: string;
   highlights: string[];
 }
@@ -26,8 +26,8 @@ export interface TrustFactor {
 }
 
 export const BUSINESS_INFO = {
-  name: "SK Tour and Travel",
-  shortName: "SK Tour & Travel",
+  name: "Siliguri Tour and Travels",
+  shortName: "Siliguri Tour & Travels",
   logo: "/images/logo.png",
   tagline: "Your Trusted Travel & Ticket Booking Partner",
   subTagline: "Train Tickets • Flight Tickets • Four-Wheeler Travel Services",
@@ -77,6 +77,36 @@ export const SERVICES: ServiceItem[] = [
     iconName: "Car",
     badge: "Multiple Vehicle Options",
     highlights: ["Different vehicle categories", "Local & outstation travel", "Customer-focused service"],
+  },
+  {
+    id: "haj-umrah",
+    title: "Haj & Umrah",
+    shortDesc: "Complete Haj and Umrah packages with dedicated guidance.",
+    longDesc: "We provide comprehensive Haj and Umrah travel packages including visa processing, flight bookings, and accommodation assistance for a seamless spiritual journey.",
+    image: "/images/service_umrah.jpg",
+    iconName: "Moon",
+    badge: "Spiritual Journey",
+    highlights: ["Complete travel packages", "Visa & accommodation assistance", "Dedicated guidance"],
+  },
+  {
+    id: "visa-services",
+    title: "Visa Services",
+    shortDesc: "Reliable visa application and processing assistance.",
+    longDesc: "Expert assistance for tourist, business, and specialized visa applications for various countries. We simplify the documentation and application process.",
+    image: "/images/service_visa.jpg",
+    iconName: "FileText",
+    badge: "Global Access",
+    highlights: ["Tourist & Business Visas", "Documentation support", "Prompt processing"],
+  },
+  {
+    id: "money-exchange",
+    title: "Money Exchange",
+    shortDesc: "Secure and swift foreign currency exchange services.",
+    longDesc: "We offer secure, swift, and reliable foreign currency exchange services at competitive rates for your international travel and business needs.",
+    image: "/images/service_money.jpg",
+    iconName: "Banknote",
+    badge: "Best Rates",
+    highlights: ["Competitive exchange rates", "Secure transactions", "Multiple currencies supported"],
   },
 ];
 

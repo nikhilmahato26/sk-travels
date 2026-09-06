@@ -194,6 +194,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledService
                     <option value="Train Ticket">Train Ticket</option>
                     <option value="Flight Ticket">Flight Ticket</option>
                     <option value="Four-Wheeler Service">Four-Wheeler Service</option>
+                    <option value="Haj & Umrah">Haj & Umrah</option>
+                    <option value="Visa Services">Visa Services</option>
+                    <option value="Money Exchange">Money Exchange</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
