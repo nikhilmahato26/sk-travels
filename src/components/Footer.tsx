@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-amber-400 bg-brand-deep shrink-0 shadow-md">
                 <Image
                   src={BUSINESS_INFO.logo}
-                  alt="SK Tour and Travel Logo"
+                  alt="Siliguri Tour and Travels Logo"
                   fill
                   className="object-cover"
                 />

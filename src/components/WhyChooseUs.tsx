@@ -44,7 +44,7 @@ export const WhyChooseUs: React.FC = () => {
             <span>Our Commitment</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-deep font-heading tracking-tight">
-            Why Choose SK Tour & Travel
+            Why Choose Siliguri Tour and Travels
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
             Dedicated travel and ticket booking assistance rooted in reliability and attentive local service in Pupri.

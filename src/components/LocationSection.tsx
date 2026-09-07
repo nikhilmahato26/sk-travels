@@ -51,7 +51,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                   Station Road Hub
                 </span>
                 <h3 className="text-2xl font-bold text-brand-deep font-heading mt-2">
-                  SK Tour & Travel Pupri
+                  Siliguri Tour and Travels Pupri
                 </h3>
                 <p className="text-slate-700 text-base font-medium mt-3 leading-relaxed">
                   📍 {BUSINESS_INFO.address}

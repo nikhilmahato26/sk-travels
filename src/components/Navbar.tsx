@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-sm border-2 border-brand-yellow/60 group-hover:scale-105 transition-transform bg-brand-deep shrink-0">
               <Image
                 src={BUSINESS_INFO.logo}
-                alt="SK Tour and Travel Official Logo"
+                alt="Siliguri Tour and Travels Official Logo"
                 fill
                 className="object-cover"
                 priority
@@ -62,10 +62,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <div>
               <div className="flex items-center space-x-1.5">
                 <span className="text-xl font-extrabold tracking-tight text-brand-deep font-heading">
-                  SK
+                  SILIGURI
                 </span>
                 <span className="text-xl font-extrabold tracking-tight text-brand-yellow font-heading">
-                  TOUR & TRAVEL
+                  TOUR & TRAVELS
                 </span>
               </div>
               <p className="text-[10px] sm:text-[11px] font-semibold text-slate-500 uppercase tracking-wider">

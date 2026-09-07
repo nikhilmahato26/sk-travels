@@ -25,7 +25,7 @@ export const AboutSection: React.FC = () => {
               <div className="relative w-12 h-12 rounded-full overflow-hidden border border-amber-400 shrink-0 bg-white shadow">
                 <Image
                   src={BUSINESS_INFO.logo}
-                  alt="SK Tour and Travel Badge"
+                  alt="Siliguri Tour and Travels Badge"
                   fill
                   className="object-cover"
                 />
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             </h2>
 
             <p className="text-slate-700 text-base leading-relaxed">
-              Based in <strong>Pupri, Bihar</strong>, <strong>SK Tour and Travel</strong> provides dedicated travel-related assistance designed to make your journeys smooth, organized, and hassle-free. From our conveniently situated office on <strong>Station Road, Near Krishna Complex</strong>, we assist travelers with end-to-end booking needs.
+              Based in <strong>Pupri, Bihar</strong>, <strong>Siliguri Tour and Travels</strong> provides dedicated travel-related assistance designed to make your journeys smooth, organized, and hassle-free. From our conveniently situated office on <strong>Station Road, Near Krishna Complex</strong>, we assist travelers with end-to-end booking needs.
             </p>
 
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">

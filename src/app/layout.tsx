@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sktravels-pupri.com"),
-  title: "SK Tour and Travel | Train & Flight Ticket Booking, Four-Wheeler Services in Pupri, Bihar",
-  description: "SK Tour and Travel provides reliable train ticket booking, domestic flight ticket booking assistance, and diverse four-wheeler travel services at Station Road, Near Krishna Complex, Pupri, Bihar.",
+  title: "Siliguri Tour and Travels | Train & Flight Ticket Booking, Four-Wheeler Services in Pupri, Bihar",
+  description: "Siliguri Tour and Travels provides reliable train ticket booking, domestic flight ticket booking assistance, and diverse four-wheeler travel services at Station Road, Near Krishna Complex, Pupri, Bihar.",
   keywords: [
-    "SK Tour and Travel",
-    "SK Tour & Travel Pupri",
+    "Siliguri Tour and Travels",
+    "Siliguri Tour & Travels Pupri",
     "Train Ticket Booking Pupri",
     "Flight Ticket Booking Pupri",
     "Travel Agency Pupri",
@@ -18,28 +18,28 @@ export const metadata: Metadata = {
     "Pupri Bihar Travel Agent",
     "Car Rental Pupri",
   ],
-  authors: [{ name: "SK Tour and Travel" }],
+  authors: [{ name: "Siliguri Tour and Travels" }],
   icons: {
     icon: "/images/logo.png",
     apple: "/images/logo.png",
   },
   openGraph: {
-    title: "SK Tour & Travel - Travel & Ticket Booking Partner in Pupri, Bihar",
+    title: "Siliguri Tour & Travels - Travel & Ticket Booking Partner in Pupri, Bihar",
     description: "Train Tickets • Flight Tickets • Four-Wheeler Travel Services. Located at Station Road, Near Krishna Complex, Pupri, Bihar.",
     url: "https://sktravels-pupri.com",
-    siteName: "SK Tour and Travel",
+    siteName: "Siliguri Tour and Travels",
     images: [
       {
         url: "/images/logo.png",
         width: 800,
         height: 800,
-        alt: "SK Tour and Travel Official Logo",
+        alt: "Siliguri Tour and Travels Official Logo",
       },
       {
         url: "/images/hero_travel_montage.jpg",
         width: 1200,
         height: 630,
-        alt: "SK Tour and Travel Pupri - Train, Flight and Four Wheeler Services",
+        alt: "Siliguri Tour and Travels Pupri - Train, Flight and Four Wheeler Services",
       },
     ],
     locale: "en_IN",
@@ -60,8 +60,8 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "SK Tour and Travel",
-    "alternateName": "SK Tour & Travel",
+    "name": "Siliguri Tour and Travels",
+    "alternateName": "Siliguri Tour & Travels",
     "image": "https://sktravels-pupri.com/images/logo.png",
     "description": "Travel and ticket booking agency offering train tickets, flight bookings, and four-wheeler travel services.",
     "address": {

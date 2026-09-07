@@ -128,7 +128,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                 <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-brand-yellow/60 bg-brand-deep shrink-0 shadow-sm">
                   <Image
                     src={BUSINESS_INFO.logo}
-                    alt="SK Tour and Travel Logo"
+                    alt="Siliguri Tour and Travels Logo"
                     fill
                     className="object-cover"
                   />
