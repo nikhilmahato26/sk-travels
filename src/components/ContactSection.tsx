@@ -34,6 +34,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledService
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const message = `*New Travel Enquiry*
+    
+*Name:* ${formData.name}
+*Phone:* ${formData.phoneNumber}
+*Service:* ${formData.serviceRequired}
+*Date:* ${formData.travelDate || "Flexible"}
+*Route:* ${formData.from} to ${formData.to}
+*Passengers:* ${formData.passengers}
+*Notes:* ${formData.message || "N/A"}`;
+
+    const whatsappUrl = `https://wa.me/${BUSINESS_INFO.whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+
     const randomId = "SKT-" + Math.floor(100000 + Math.random() * 900000);
     setReferenceId(randomId);
     setSubmitted(true);
