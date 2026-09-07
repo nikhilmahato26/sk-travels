@@ -154,6 +154,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     <option value="Train Ticket">Train Ticket</option>
                     <option value="Flight Ticket">Flight Ticket</option>
                     <option value="Four-Wheeler Service">Four-Wheeler Service</option>
+                    <option value="Tour Packages">Tour Packages</option>
                     <option value="Haj & Umrah">Haj & Umrah</option>
                     <option value="Visa Services">Visa Services</option>
                     <option value="Money Exchange">Money Exchange</option>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Compass, MapPin, ArrowUp, Train, Plane, Car, ShieldCheck } from "lucide-react";
+import { Compass, MapPin, ArrowUp, Train, Plane, Car, ShieldCheck, Palmtree, Moon, FileText, Banknote } from "lucide-react";
 import { BUSINESS_INFO, NAV_LINKS, SERVICES } from "@/data/content";
 
 export const Footer: React.FC = () => {
@@ -41,11 +41,11 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-amber-400 font-semibold text-sm">
-              Train Ticket Booking | Flight Ticket Booking | Four-Wheeler Services
+              Train & Flight Tickets | Tour Packages | Haj & Umrah | Four-Wheelers
             </p>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              Reliable travel and ticket booking assistance for train reservations, domestic flight bookings, and convenient four-wheeler passenger travel.
+              Reliable travel and ticket booking assistance for train reservations, domestic flight bookings, holiday tour packages, and convenient four-wheeler passenger travel.
             </p>
 
             <div className="flex items-start space-x-2.5 text-sm text-slate-300 pt-2">
@@ -89,12 +89,24 @@ export const Footer: React.FC = () => {
                 <span>Flight Ticket Booking Assistance</span>
               </li>
               <li className="flex items-center space-x-2">
+                <Palmtree className="w-4 h-4 text-brand-yellow shrink-0" />
+                <span>Custom & Group Tour Packages</span>
+              </li>
+              <li className="flex items-center space-x-2">
                 <Car className="w-4 h-4 text-brand-yellow shrink-0" />
                 <span>Four-Wheeler Services (Sedan, SUV, etc.)</span>
               </li>
               <li className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-brand-yellow shrink-0" />
-                <span>Pupri, Station Road Location</span>
+                <Moon className="w-4 h-4 text-brand-yellow shrink-0" />
+                <span>Haj & Umrah Packages</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FileText className="w-4 h-4 text-brand-yellow shrink-0" />
+                <span>Visa Documentation & Processing</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Banknote className="w-4 h-4 text-brand-yellow shrink-0" />
+                <span>Foreign Currency & Money Exchange</span>
               </li>
             </ul>
 

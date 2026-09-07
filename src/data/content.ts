@@ -4,7 +4,7 @@ export interface ServiceItem {
   shortDesc: string;
   longDesc: string;
   image: string;
-  iconName: "Train" | "Plane" | "Car" | "Moon" | "FileText" | "Banknote";
+  iconName: "Train" | "Plane" | "Car" | "Moon" | "FileText" | "Banknote" | "Palmtree";
   badge: string;
   highlights: string[];
 }
@@ -30,7 +30,7 @@ export const BUSINESS_INFO = {
   shortName: "Siliguri Tour & Travels",
   logo: "/images/logo.png",
   tagline: "Your Trusted Travel & Ticket Booking Partner",
-  subTagline: "Train Tickets • Flight Tickets • Four-Wheeler Travel Services",
+  subTagline: "Train Tickets • Flight Tickets • Tour Packages • Four-Wheelers",
   locationBadge: "Pupri, Near Krishna Complex, Station Road",
   address: "Pupri, Near Krishna Complex, Station Road, Bihar, India",
   googleMapsQuery: "Pupri Station Road Near Krishna Complex Bihar India",
@@ -77,6 +77,16 @@ export const SERVICES: ServiceItem[] = [
     iconName: "Car",
     badge: "Multiple Vehicle Options",
     highlights: ["Different vehicle categories", "Local & outstation travel", "Customer-focused service"],
+  },
+  {
+    id: "tour-packages",
+    title: "Tour Packages",
+    shortDesc: "Customized domestic & international holiday tour packages.",
+    longDesc: "Curated holiday and vacation tour packages tailored for families, honeymooners, and groups. From hill stations and beach getaways to cultural heritage and pilgrimage circuits, we arrange complete itineraries.",
+    image: "/images/service_tour_packages.jpg",
+    iconName: "Palmtree",
+    badge: "Holiday & Vacation",
+    highlights: ["Customized family & group packages", "Hill stations, beaches & heritage tours", "Hotels, transport & sightseeing support"],
   },
   {
     id: "haj-umrah",

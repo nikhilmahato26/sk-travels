@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Train, Plane, Car, ArrowRight, CheckCircle2, Moon, FileText, Banknote } from "lucide-react";
+import { Train, Plane, Car, ArrowRight, CheckCircle2, Moon, FileText, Banknote, Palmtree } from "lucide-react";
 import { SERVICES, ServiceItem } from "@/data/content";
 
 interface ServicesSectionProps {
@@ -24,6 +24,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
         return <FileText className="w-6 h-6 text-brand-yellow" />;
       case "Banknote":
         return <Banknote className="w-6 h-6 text-brand-yellow" />;
+      case "Palmtree":
+        return <Palmtree className="w-6 h-6 text-brand-yellow" />;
     }
   };
 
@@ -43,13 +45,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
           </p>
         </div>
 
-        {/* 3 Modern Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {SERVICES.map((service) => (
+        {/* Modern Service Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {SERVICES.map((service, index) => (
             <div
               key={service.id}
               id={service.id}
-              className="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
+              className={`group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 ${
+                index === SERVICES.length - 1 && SERVICES.length % 3 === 1
+                  ? "sm:col-span-2 lg:col-span-1 lg:col-start-2 max-w-md sm:max-w-md lg:max-w-none mx-auto sm:mx-auto lg:mx-0 w-full"
+                  : ""
+              }`}
             >
               <div>
                 {/* Image Container with Badge */}

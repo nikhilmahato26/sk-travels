@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Train, Plane, Car, MapPin, Calendar, ArrowRight, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Train, Plane, Car, MapPin, Calendar, ArrowRight, ShieldCheck, CheckCircle2, Palmtree } from "lucide-react";
 import { BUSINESS_INFO } from "@/data/content";
 
 interface HeroSectionProps {
@@ -10,17 +10,18 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
-  const [activeTab, setActiveTab] = useState<"train" | "flight" | "car">("train");
+  const [activeTab, setActiveTab] = useState<"train" | "flight" | "car" | "tour">("train");
   const [fromCity, setFromCity] = useState("");
   const [toCity, setToCity] = useState("");
   const [travelDate, setTravelDate] = useState("");
 
   const handleQuickEnquiry = (e: React.FormEvent) => {
     e.preventDefault();
-    const serviceMap = {
+    const serviceMap: Record<string, string> = {
       train: "Train Ticket",
       flight: "Flight Ticket",
       car: "Four-Wheeler Service",
+      tour: "Tour Packages",
     };
     onOpenBooking(serviceMap[activeTab], {
       from: fromCity,
@@ -136,7 +137,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               </div>
 
               {/* Service Selection Tabs */}
-              <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-xl my-4 text-xs font-semibold">
+              <div className="grid grid-cols-4 gap-1 p-1 bg-slate-100 rounded-xl my-4 text-xs font-semibold">
                 <button
                   type="button"
                   onClick={() => setActiveTab("train")}
@@ -173,6 +174,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                   <Car className="w-4 h-4" />
                   <span>Vehicle</span>
                 </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveTab("tour")}
+                  className={`py-2 px-1 rounded-lg flex flex-col items-center justify-center space-y-1 transition-all ${
+                    activeTab === "tour"
+                      ? "bg-brand-deep text-white shadow-sm"
+                      : "text-slate-600 hover:text-brand-deep"
+                  }`}
+                >
+                  <Palmtree className="w-4 h-4" />
+                  <span>Tour</span>
+                </button>
               </div>
 
               {/* Input Fields Form */}
@@ -189,6 +202,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                         ? "e.g. Pupri / Janakpur Road"
                         : activeTab === "flight"
                         ? "e.g. Patna / Darbhanga Airport"
+                        : activeTab === "tour"
+                        ? "e.g. Pupri / Sitamarhi / Patna"
                         : "e.g. Pupri Station Road"
                     }
                     value={fromCity}
@@ -209,6 +224,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                         ? "e.g. Delhi, Mumbai, Kolkata"
                         : activeTab === "flight"
                         ? "e.g. Bengaluru, Delhi, Mumbai"
+                        : activeTab === "tour"
+                        ? "e.g. Kashmir, Goa, Manali, Kerala"
                         : "e.g. Patna, Muzaffarpur, Sitamarhi"
                     }
                     value={toCity}

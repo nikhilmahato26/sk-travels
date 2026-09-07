@@ -32,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </div>
           <div className="flex items-center space-x-4 text-xs">
             <span className="bg-brand-blue/50 text-amber-300 px-2 py-0.5 rounded font-medium">
-              Train • Flight • Four-Wheeler
+              Train • Flight • Tour Packages • Four-Wheeler
             </span>
             <span className="text-slate-300">Station Road, Pupri</span>
           </div>
