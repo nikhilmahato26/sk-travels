@@ -35,7 +35,7 @@ export const BUSINESS_INFO = {
   address: "Pupri, Near Krishna Complex, Station Road, Bihar, India",
   googleMapsQuery: "Pupri Station Road Near Krishna Complex Bihar India",
   googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.6276228308876!2d85.74838637599042!3d26.500257576891963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed09ea91a7c361%3A0x7d6f51eb9dc74824!2sJanakpur%20Road%20Railway%20Station%20(Pupri)!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
-  whatsappNumber: "+919999999999", // Replace with your actual WhatsApp number
+  whatsappNumber: "+917292871111",
 };
 
 export const NAV_LINKS = [
